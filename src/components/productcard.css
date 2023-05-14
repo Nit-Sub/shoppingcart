@@ -26,6 +26,6 @@
 }
 .button:hover{
     cursor: pointer;
-    -webkit-filter:  grayscale(100%) brightness(51%);
+    -webkit-filter: grayscale(100%) brightness(51%);
     
 }

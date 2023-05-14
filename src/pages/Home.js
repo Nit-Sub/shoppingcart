@@ -1,5 +1,6 @@
 import React from 'react'
 import ProductCard from '../components/ProductCard'
+import './home.css'
 
 const Home = () => {
     const products = [
@@ -13,7 +14,7 @@ const Home = () => {
     return (
         <>
         <div className='card'>
-
+            <ProductCard />
             <ProductCard />
             <ProductCard />
             </div>
