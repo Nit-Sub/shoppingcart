@@ -1,0 +1,31 @@
+.product{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.action{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    font-weight: bold;
+}
+.button{
+    width: 100px;
+    background-color: skyblue;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    color: white;
+}
+.button:hover{
+    cursor: pointer;
+    -webkit-filter:  grayscale(100%) brightness(51%);
+    
+}

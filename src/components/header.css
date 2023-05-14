@@ -8,7 +8,7 @@ header {
     border-bottom: 1px solid #EEEEEE;
     font-size: 18px;
     align-items: center;
-
+    margin-bottom: 70px;
 }
 .logo{
     display:flex;
