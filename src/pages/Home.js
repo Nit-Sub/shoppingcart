@@ -11,12 +11,14 @@ const Home = () => {
         { "id": 5, "name": "APPLE Airpods Max Bluetooth Headset", "price": 199, "image": "/assets/images/1005.png" },
         { "id": 6, "name": "ZEBRONICS Zeb-Thunder Wired", "price": 29, "image": "/assets/images/1006.png" }
     ]
+    
     return (
         <>
         <div className='card'>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            {
+            products.map((product)=>(
+                    <ProductCard product={product} key={product.id}/>
+            ))}
             </div>
 
         </>

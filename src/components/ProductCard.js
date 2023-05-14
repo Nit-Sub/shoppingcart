@@ -1,14 +1,15 @@
 import React from 'react'
 import headphone from "../assests/card.jpg"
 import './productcard.css'
-const ProductCard = () => {
+const ProductCard = ({product}) => {
+    console.log(product)
   return (
    <dic className='product'>
     <img src={headphone}/>
-    <p>Title</p>
+    <p>{product.name}</p>
     <div className='action'>
         <span className='price'>
-            price
+           $ {product.price}
         </span>
         <button className='button'>
             Add To Cart
