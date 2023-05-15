@@ -1,3 +1,4 @@
+//eslint-disable-nextlin
 import './ProductCard.css'
 
 export const ProductCard = ({product,image}) => {
