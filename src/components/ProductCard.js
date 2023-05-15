@@ -1,4 +1,4 @@
-import "./ProductCard.css";
+import './ProductCard.css'
 
 export const ProductCard = ({product,image}) => {
   const {name, price} = product;
