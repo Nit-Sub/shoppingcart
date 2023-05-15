@@ -1,6 +1,5 @@
 import { useTitle } from "../hooks/useTitle";
 import { CartCard } from "../components";
-import headphone from '../assets/images/1001.jpg'
 
 export const Cart = () => {
   useTitle("Cart");
@@ -15,7 +14,7 @@ export const Cart = () => {
       <section className="cart">
         <h1>Cart Items: {products.length}</h1>
         { products.map((product) => (
-          <CartCard key={product.id} product={product} image={headphone} />
+          <CartCard key={product.id} product={product} />
         )) }        
       </section>
     </main>

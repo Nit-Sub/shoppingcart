@@ -1,13 +1,11 @@
 import { useTitle } from "../hooks/useTitle";
 import { ProductCard } from "../components";
-import headphone from '../assets/images/1001.jpg'
-
 
 export const Home = () => {
   useTitle("Home");
 
   const products = [
-    {"id": 1, "name": "Sony Wh-Ch510 Bluetooth Wireless", "price": 149, "image": "/assets/images/1001.jpg"},
+    {"id": 1, "name": "Sony Wh-Ch510 Bluetooth Wireless", "price": 149, "image": "/assets/images/1001.png"},
     {"id": 2, "name": "boAt Rockerz 450", "price": 49, "image": "/assets/images/1002.png"},
     {"id": 3, "name": "JBL Tune 760NC", "price": 179, "image": "/assets/images/1003.png"},
     {"id": 4, "name": "Logitech H111 Wired", "price": 39, "image": "/assets/images/1004.png"},
@@ -19,7 +17,7 @@ export const Home = () => {
     <main>
       <section className="products">
         { products.map((product) => (
-          <ProductCard key={product.id} product={product} image={headphone}/>
+          <ProductCard key={product.id} product={product} />
         )) }        
       </section>
     </main>

@@ -1,8 +1,7 @@
-//eslint-disable-nextlin
-import './ProductCard.css'
+import "./ProductCard.css";
 
-export const ProductCard = ({product,image}) => {
-  const {name, price} = product;
+export const ProductCard = ({product}) => {
+  const {name, price, image} = product;
 
   return (
     <div className="productCard">

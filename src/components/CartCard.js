@@ -1,7 +1,7 @@
 import "./CartCard.css";
 
-export const CartCard = ({product,image}) => {
-  const {name, price} = product;
+export const CartCard = ({product}) => {
+  const {name, price, image} = product;
 
   return (
       <div className="cartCard">
