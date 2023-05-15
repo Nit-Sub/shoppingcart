@@ -5,7 +5,7 @@ const ProductCard = ({product}) => {
     console.log(product)
   return (
    <dic className='product'>
-    <img src={headphone}/>
+    <img src={headphone} alt="Product"/>
     <p>{product.name}</p>
     <div className='action'>
         <span className='price'>

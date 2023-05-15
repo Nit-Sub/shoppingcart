@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductCard from '../components/ProductCard'
 import './home.css'
+import { useTitle } from '../hook/useTitle'
 
 const Home = () => {
     const products = [
@@ -11,7 +12,7 @@ const Home = () => {
         { "id": 5, "name": "APPLE Airpods Max Bluetooth Headset", "price": 199, "image": "/assets/images/1005.png" },
         { "id": 6, "name": "ZEBRONICS Zeb-Thunder Wired", "price": 29, "image": "/assets/images/1006.png" }
     ]
-    
+    useTitle("Home")
     return (
         <>
         <div className='card'>
