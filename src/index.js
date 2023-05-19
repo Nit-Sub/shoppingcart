@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from "react-router-dom";
-import {CartProvider} from './context/CartContext'
+import { Provider } from 'react-redux';
+import {store} from './store/store'
 import './index.css';
 import App from './App';
 
@@ -9,9 +10,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <CartProvider>
+      <Provider store={store}>
       <App />
-      </CartProvider>
+
+      </Provider>
     </Router>
   </React.StrictMode>
 );
