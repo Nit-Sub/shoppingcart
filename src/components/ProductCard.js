@@ -11,7 +11,7 @@ export const ProductCard = ({ product }) => {
       <p className="name">{name}</p>
       <div className="action">
         <p>${price}</p>
-        <button onClick={() => addToCart(product)}>Add To Cart</button> 
+        <button onClick={() => dispatch(product)}>Add To Cart</button> 
       </div>
     </div>
   )

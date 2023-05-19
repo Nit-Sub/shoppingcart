@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 
 const cartSlice = createSlice({
     name: 'cart',
@@ -6,11 +6,17 @@ const cartSlice = createSlice({
         cartList: [],
         total: 0
     },
-    add(state, action) { 
-        const updatedCartList= state.cartList.concat(action.payload);
-        return {...state , cartList: updatedCartList}
+    add(state, action) {
+        const updatedCartList = state.cartList.concat(action.payload);
+        const total = state.total + action.payload.price;
+        return { ...state, total: total, cartList: updatedCartList }
     },
-    rem0ve(state, action) { },
+    remove(state, action) {
+        const updatedCartList = state.cartList.filter(item => item.id !== action.payload.id);
+        const total = state.total - action.payload.price;
+        return { ...state, total: total, cartList: updatedCartList }
+
+    }
 
 })
 
